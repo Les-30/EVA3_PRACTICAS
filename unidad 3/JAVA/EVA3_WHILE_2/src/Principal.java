@@ -21,20 +21,20 @@ public class Principal {
         Scanner Leer = new Scanner (System.in);
         String user = "Leslie";
         String pass = "LeslieP";
-        int iCon=0;
+        int iCont=0;
         boolean enter=false;
         
-        while((iCon<=2)&&(!enter)){
+        while((iCont<=2)&&(!enter)){
             System.out.println("Usuario");
                 String us = Leer.nextLine();
             System.out.println("Contraseña");
                 String con = Leer.nextLine();
             if((us.equals(user))&&(con.equals(pass))){
-                iCon ++;
+                iCont ++;
                 enter=true;
             }else{
                 System.out.println("Datos incorrectos");
-                iCon ++;
+                iCont ++;
             }
                 
         }

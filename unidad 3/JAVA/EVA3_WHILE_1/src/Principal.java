@@ -19,24 +19,28 @@ public class Principal {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner Leer = new Scanner (System.in);
-        int sum = 0, sumd=0, i=0,numU,numC;
+        int sum=0;
+        int sumd=0;
+        int i=0;
+        int numUs;
+        int num;
         
-        numU = (int) (Math.random()*14+1);
-        sum += numU;
-        System.out.println(numU);
+        numUs = (int) (Math.random()*14+1);
+        sum += numUs;
+        System.out.println(numUs);
         
-        numC = (int) (Math.random()*14+1);
-        sumd += numC;
+        num = (int) (Math.random()*14+1);
+        sumd += num;
         
        while ((sum<=21)&&(sumd<=21)&&(i==0)){
             System.out.println("¿Quieres una carta?");
                 String res = Leer.nextLine();
                 if (res.equals("si")){
-                    numU = (int) (Math.random()*14+1);
-                    System.out.println(numU);
-                    sum += numU;
-                    numC = (int) (Math.random()*14+1);
-                    sumd += numC;
+                    numUs = (int) (Math.random()*14+1);
+                    System.out.println(numUs);
+                    sum += numUs;
+                    num = (int) (Math.random()*14+1);
+                    sumd += num;
                 }else{
                     i=1;
                 }
